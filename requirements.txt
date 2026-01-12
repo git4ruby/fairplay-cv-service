@@ -10,8 +10,10 @@ opencv-contrib-python==4.10.0.84
 numpy==1.26.4
 pillow==11.1.0
 
-# Object Detection (Optional - can add YOLOv8 later)
-# ultralytics==8.3.50
+# Object Detection - YOLOv8
+ultralytics>=8.3.0
+torch>=2.2.0
+torchvision>=0.17.0
 
 # AWS S3
 boto3==1.35.99

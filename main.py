@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from config import get_settings
 from schemas import AnalyzeRequest, AnalyzeResponse, HealthResponse, ErrorResponse
-from video_processor import VideoProcessor
+from video_processor_enhanced import EnhancedVideoProcessor
 from s3_utils import S3Handler
 
 # Configure logging
@@ -39,7 +39,7 @@ app.add_middleware(
 
 # Initialize services
 settings = get_settings()
-video_processor = VideoProcessor()
+video_processor = EnhancedVideoProcessor()
 s3_handler = S3Handler()
 
 # Temporary directories

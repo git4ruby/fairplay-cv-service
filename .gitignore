@@ -45,3 +45,4 @@ test_frames/
 # OS
 .DS_Store
 Thumbs.db
+*.pt
